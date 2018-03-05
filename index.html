@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery Template</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    
+    
+    
+    
+    
+        
+    $(function(){
+        
+        $('button').click(function(){
+            
+            var name = $('#name').val();
+            var businessName = $('#business').val();
+            var colorText = $('#textColor').val();
+            var borderColor = $('#border').val();
+            var email = $('#email').val();
+            var phoneNumber = $('#phone').val();
+            
+            $('h1').html(businessName).css('text-align', 'center')
+            $('h3').html(name).css('text-align', 'center');
+            $('h4').html(email).css('text-align', 'center');
+            $('h5').html(phoneNumber).css('text-align', 'center');
+            
+            
+            $('div').css({"background-image": "url('business-card.jpg')", 'color': colorText, 'border-style': 'solid', 'border-color': borderColor, 'display': 'none'});
+            
+            
+            $('div').slideDown(function(){
+            });
+            
+            
+            
+        });
+        
+        
+        
+    });
+    
+    
+    
+    
+    
+    
+        
+    </script>
+  </head>
+  <body>
+  
+  Name: <input id="name"><br><br>
+  Business: <input id="business"><br><br>
+  Email: <input id="email"><br>
+  Phone: <input id="phone"><br><br>
+  Text Color: <input id="textColor"><br>
+  Border Color: <input id="border"><br><br>
+  
+  <button>Click here to create your business card!</button><br><br>
+  
+ 
+  <div>
+      
+  <h1></h1>
+  
+  <h3></h3>
+  
+  <h4></h4>
+  <h5></h5>
+  
+  
+  
+  </div>
+  
+  </body>
+</html>
